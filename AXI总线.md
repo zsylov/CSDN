@@ -9,5 +9,10 @@ AXI总线介绍
  * 读数据通道 read data channel  
  * 写地址通道 write address channel
  * 写数据通道 write data channe
- * 写响应通道 write response channel 
+ * 写响应通道 write response channel   
+**其中由于读响应与读数据方向相同，因此将读响应与读数据通道合并**
++ __读数据通道结构__
  
+ + 其中分为读地址通道和读数据通道。    
+      
+      
