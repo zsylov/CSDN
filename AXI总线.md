@@ -34,6 +34,25 @@ __传输地址和数据都是在VALID和READY为高时有效。__
 |:-------:|:------:|:------:|
 |ACLK     |时钟源  |全局时钟信号|
 |ARESETn  |复位源  |全局复位信号，低电平有效|
+写地址通道信号
+----
+|信号名  |源  |描述|
+|:-------:|:------:|:------:|
+|AWID  |Master  |写地址ID，用来标志一组写信号|
+|AWADDR  |Master|写地址，一次突发写的首地址|
+|AWLEN   |Master |突发长度，突发写传输数据的个数|
+|AWSIZE   |Master |突发大小，每次突发传输的字节数|
+|AWBURST   |Master |突发类型，FIXED，INCR，WRAP|
+|AWLOCK   |Master |总线锁信号，normal, exclusive, locked|
+|AWCACHE   |Master  |Cache类型，表明一次事务是怎样通过系统的bufferable, cacheable, read-allocate, write-allocate|
+|AWPROT    |Master |保护类型，传输的特权级及安全等级|
+|AWQOS    |Master |质量服务QoS，可作为安全级标志|
+|AWREGION  |Master |域标记，可以实现一个物理地址与多个逻辑地址的映射，也可以对某些地址进行保护|
+|AWUSER  |Master |用户自定义信号|
+|AWVALID  |Master  |有效信号，表明此通道的地址控制信号有效|
+|AWREADY  |Slave  |从设备已经准备好接受地址和控制信息|
+
+
 
       
       
