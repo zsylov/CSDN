@@ -53,7 +53,15 @@ __传输地址和数据都是在VALID和READY为高时有效。__
 |AWVALID  |Master  |有效信号，表明此通道的地址控制信号有效|
 |AWREADY  |Slave  |从设备已经准备好接受地址和控制信息|
 
+写数据通道信号
+---
+|信号名 |源 |描述|
+|:-------:|:------:|:------:|
+|WID |aster|一次写传输的ID|
+|WDATA |Master|写数据|
+|WSTRB |Master |写数据有效的字节线，用来表明哪8bits数据是有效的|
+|WLAST |Master |突发写传输的最后一个数据|
+|WUSER |Master |用户自定义信号|
+|WVALID |Master |写有效|
+|WREADY |Slave |表明从机可以接收写数据|
 
-
-      
-      
