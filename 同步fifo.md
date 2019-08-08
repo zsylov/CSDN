@@ -376,4 +376,4 @@ always @ (posedge clk)
 	assign data_out = dout;
 	endmodule
 	````
-  ![csdn](https://blog.csdn.net/qq_15026001/article/details/98451457)
+  [csdn](https://blog.csdn.net/qq_15026001/article/details/98451457)
